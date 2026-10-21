@@ -1,0 +1,36 @@
+/*
+ * Self-hosted Poppins (latin subset, weights 400/500/600/700).
+ * Loaded by the Filament admin panel via LocalFontProvider — no runtime
+ * Google Fonts request. Font files live alongside this stylesheet.
+ */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/poppins/poppins-400-latin.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('/fonts/poppins/poppins-500-latin.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('/fonts/poppins/poppins-600-latin.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('/fonts/poppins/poppins-700-latin.woff2') format('woff2');
+}

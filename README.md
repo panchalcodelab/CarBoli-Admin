@@ -81,6 +81,29 @@ npm run dev
 Visit `http://127.0.0.1:8000`. There is no public front page — the root redirects to the
 login screen, and authenticated admins land on the dashboard at `/admin`.
 
+### Running with Docker
+
+Docker Compose runs PHP-FPM, Nginx, MySQL, and the Vite production asset build:
+
+```bash
+# Make sure .env exists and contains APP_KEY
+docker compose up --build
+```
+
+Open `http://localhost:8000`. The application container runs database migrations
+automatically after MySQL becomes healthy. The default Docker database credentials are
+`carboli` / `carboli` for the `car_boli` database; these values are supplied to the
+application container independently of the host database settings.
+
+Stop the containers with:
+
+```bash
+docker compose down
+```
+
+Use `docker compose down -v` only when you intentionally want to delete the MySQL and
+Laravel storage volumes.
+
 ## Admin Panel
 
 All admin screens live under `/admin` and are gated by authentication plus an
